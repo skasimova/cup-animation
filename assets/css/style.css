@@ -23,8 +23,8 @@ body {
   position: absolute;
   background-color: #fffafa;
   width: 250px;
-  height: 253px;
-  border-radius: 22% 21% 49% 49%;
+  height: 282px;
+  border-radius: 104px 104px 140px 140px;
   z-index: 2;
 }
 
@@ -32,26 +32,26 @@ body {
   position: absolute;
   border: 1px solid #cc85857d;
   width: 248px;
-  height: 253px;
-  border-radius: 22% 21% 49% 49%;
+  height: 283px;
+  border-radius: 104px 104px 140px 140px;
 }
 
 .chocolate {
   position: absolute;
   background-color: #843732;
   background: radial-gradient(circle, #843732 0%, rgba(132, 55, 50, 0.8799894958) 100%);
-  height: 86px;
-  width: 235px;
-  top: 14px;
-  left: 8px;
-  border-radius: 388px;
+  height: 99px;
+  width: 246px;
+  top: 34px;
+  left: 4px;
+  border-radius: 500px 500px 0px 0px;
 }
 
 .cup_handle {
   position: absolute;
   height: 58px;
   width: 67px;
-  top: 49px;
+  top: 64px;
   left: 223px;
   border-radius: 0 136px 186px 0;
   border: 29px solid #fffafa;
@@ -80,12 +80,16 @@ body {
 
 .white_circle {
   position: absolute;
-  background-color: #fffafa;
-  height: 74px;
-  width: 94px;
-  top: 28.6px;
-  left: 154.5px;
-  border-radius: 0 43px 85px 0;
+  background-color: white;
+  height: 122px;
+  width: 244px;
+  top: 4px;
+  left: 3px;
+  /* width: 50px; */
+  /* height: 50px; */
+  border-radius: 875px 875px 489px 489px;
+  box-shadow: 0 50px 0 3px #fffafa;
+  /* z-index: 3; */
 }
 
 .marshmallow1 {

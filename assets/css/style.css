@@ -89,7 +89,7 @@ body {
 
 .marshmallow {
   animation-name: marshmallow_move;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-color: #fffffff0;
@@ -128,6 +128,9 @@ body {
 }
 
 .shadow {
+  animation-name: shadow_move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
   position: absolute;
   width: 39px;
   height: 155px;
@@ -186,6 +189,11 @@ body {
 @keyframes marshmallow_move {
   40% {
     top: 20px;
+  }
+}
+@keyframes shadow_move {
+  50% {
+    height: 163px;
   }
 }
 

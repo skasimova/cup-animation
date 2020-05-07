@@ -32,7 +32,7 @@ body {
   top: 50px;
   height: 232px;
   border-radius: 0 0 140px 140px;
-  border: 1px solid #cc85857d;
+  border: 1px solid #cc85851f;
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@ body {
   top: 0;
   background-color: white;
   border-radius: 50%;
-  border: 1px solid #cc85852e;
+  border: 1px solid #cc85851c;
   z-index: 1;
 }
 
@@ -78,7 +78,53 @@ body {
   top: 10px;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid #cc85852e;
+}
+
+.marshmallows {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 25%;
+}
+
+.marshmallow {
+  animation-name: marshmallow_move;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: #fffffff0;
+  width: 32px;
+  height: 34px;
+  border-radius: 145px 139px 115px 115px;
+}
+
+.marshmallow_left {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+
+.marshmallow_right {
+  position: absolute;
+  top: 11px;
+  left: 62px;
+}
+
+.marshmallow_top {
+  position: absolute;
+  width: 25px;
+  height: 18px;
+  border-radius: 304px 303px 303px 303px;
+  top: 0px;
+  left: 3px;
+}
+
+.marshmallow_left .marshmallow_top {
+  background-color: #d6701842;
+}
+
+.marshmallow_right .marshmallow_top {
+  background-color: #f7ca2542;
 }
 
 .shadow {
@@ -95,56 +141,6 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 0 0 45% 16px;
-}
-
-.marshmallow1 {
-  animation-name: marshmallow_move;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate-reverse;
-  position: absolute;
-  background-color: #fffffff0;
-  width: 28px;
-  height: 32px;
-  border-radius: 145px 139px 115px 115px;
-  top: 28px;
-  left: 100px;
-}
-
-.marshmallow1_top {
-  position: absolute;
-  background-color: #d6701842;
-  width: 25px;
-  height: 18px;
-  border-radius: 304px 303px 303px 303px;
-  top: 0px;
-  left: 2px;
-}
-
-.marshmallow2 {
-  animation-name: marshmallow_move;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate-reverse;
-  position: absolute;
-  background-color: #fffffff0;
-  width: 28px;
-  height: 32px;
-  border-radius: 145px 139px 115px 115px;
-  top: 38px;
-  left: 136px;
-}
-
-.marshmallow2_top {
-  position: absolute;
-  background-color: #f7ca2542;
-  width: 26px;
-  height: 17px;
-  border-radius: 897px 879px 521px 521px;
-  top: 0px;
-  left: 1px;
 }
 
 .face {
@@ -188,9 +184,8 @@ body {
   }
 }
 @keyframes marshmallow_move {
-  50% {
-    top: 40px;
-    right: 20px;
+  40% {
+    top: 20px;
   }
 }
 
